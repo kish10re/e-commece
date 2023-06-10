@@ -1,0 +1,180 @@
+/* bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+/* navbar--------------- */
+.navbar{
+    height: 5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 19%);
+}
+.navbar > .container-fluid{
+    padding: 0 8rem;
+}
+.navbar-brand > img{
+    height: 8vh;
+}
+.nav-link{
+    margin: 0 0.9rem;
+    font-weight: 450;
+    color: #282c3f;
+}
+.nav-icons{
+    margin: 0 5rem;
+    margin-right: 0;
+}
+.nav-icons > div > p {
+    font-weight: bold;
+    font-size: small;
+    margin: 0;
+}
+.nav-icons > div > div > p {
+    font-weight: bold;
+    font-size: small;
+    margin: 0;
+}
+.nav-icons > a > p {
+    font-weight: bold;
+    font-size: small;
+    margin: 0;
+}
+.bi-person, .bi-heart, .bi-handbag, .bi-person-bounding-box, .bi-box-arrow-right{
+    font-size: 150%;
+}
+
+
+/* carousel */
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+/* main content */
+.dropdown-menu > li:hover{
+    cursor: pointer;
+}
+.prod-h{
+    padding: 1rem 8rem;
+}
+
+#products-grid{
+    margin: 1rem 8rem;
+}
+/* for small screens */
+@media (max-width: 750px) {
+    .prod-h{
+        padding: 1rem 4rem;
+    }    
+    #products-grid{
+        margin: 1rem 4rem;
+    } 
+}
+@media (max-width: 750px) {
+    .prod-h{
+        padding: 1rem 2rem;
+    }    
+    #products-grid{
+        margin: 1rem 2rem;
+    }
+}
+.product-div{
+    overflow:hidden;
+}
+.product-div:hover{
+    /* this is bootstrap's shadow-lg CSS */
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    cursor: pointer;
+}
+.product-div > img{
+    object-fit:cover;
+    height: 10rem!important;
+    width: auto!important;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ----------product.html */
+#prod-container > section > div > img {
+    height: 50vh;
+    overflow:hidden;
+}
+.rating{
+    width: 35%;
+}
+#rating-div, #rating-count {
+    padding: 0.5rem;
+}
+#prod-container > section > div > div > span{
+    padding: 0.5rem 0;
+}
+.bi-star-fill{
+    color: #72bfbc;
+}
+#prod-container > section > div > h6{
+    font-weight: 700;
+    color: #282c3f;
+}
+
+/* **************dashboard.html */
+
+#dashboard-container > h4:hover{
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    cursor: pointer;
+}
+table{
+    font-size: large;
+}
+td > img{
+    height: 20vh;
+}
+td > .bi {
+    font-size: larger;
+    margin: 1rem 1rem;
+}
+.bi-plus-circle-fill{
+    color: #0aa688;
+}
+.bi-pencil-square{
+    color: #ff905a;
+    padding: 1rem;
+}
+.bi-trash3{
+    color: #ff3e6c;
+    padding: 1rem;
+}
+.bi-pencil-square:hover, .bi-trash3:hover{
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    background-color: white;
+}
+
+/* ********alert */
+.alert{
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    z-index: 999;
+    /* centers the element both horizontally and vertically by moving it up and left by 50% of its width and height, */
+    transform: translate(-50%, -50%); 
+}
+
+/* ************FOOTER************** */
+footer{
+    background-color: #ececec!important;
+    height: 42vh;
+}
+.col-lg-3, .original{
+    width: 22%!important;
+}
+.routes{
+    width: 25%!important;
+}
+ul {
+    list-style: none;
+}
+li > input{
+    margin-right: 1rem;
+}
+.footer-bottom{
+    background-color: #ececec!important;
+}
